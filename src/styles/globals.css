@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hover-rotate:hover img.arrow {
+    transform: rotate(90deg);
+    transition: transform 300ms ease-in-out;
+}
+
+.hover-rotate img.arrow {
+    transform: rotate(0deg);
+    transition: transform 300ms ease-in-out;
+}
+
+.animation {
+    animation: visible 1s ease-in-out;
+}
+
+@keyframes visible {
+    0% {
+        opacity: 0.0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        transform: translate(-50%, -80%);
+    }
+}
